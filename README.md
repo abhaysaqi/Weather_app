@@ -45,7 +45,7 @@ City Search
 How to Run 🛠️
 Clone the repository:
 
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/abhaysaqi/Weather_app.git
 
 Navigate to the project directory:
 
