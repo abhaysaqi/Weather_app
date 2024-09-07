@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:weather_app/screens/home_screen.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        textTheme: const TextTheme( bodyMedium: TextStyle(color: Colors.white)),
+        textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.white)),
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see

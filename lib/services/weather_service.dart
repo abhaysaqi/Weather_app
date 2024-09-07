@@ -1,9 +1,10 @@
 import 'dart:convert';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 class WeatherService {
-  final String apiKey = "6af5ada4fbe845c598f180516240409";
+  final String? apiKey = dotenv.env['WEATHER_API_KEY'];
   final String forecastBaseUrl = "http://api.weatherapi.com/v1/forecast.json";
   final String searchBaseUrl = "http://api.weatherapi.com/v1/search.json";
 
